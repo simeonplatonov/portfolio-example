@@ -1,0 +1,135 @@
+body{
+ text-align: center;
+}
+.navbar{
+  overflow: hidden;
+
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    z-index: 3;
+}
+a{
+  color:white;
+}
+a:hover{
+  color:black;
+  text-decoration: none;
+}
+.aboutme{
+
+  background-color: #8c00ff;
+  color: white;
+  padding: 5%;
+  position: relative;
+
+
+}
+
+.in{
+  z-index: -1;
+  position: relative;
+}
+.skills{
+  color:#8c00ff;
+  box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  z-index: 1;
+  position: relative;
+  bottom: 40px;
+  background-color: white;
+
+  text-align: center;
+}
+.skills ul{
+  color:black;
+  padding: 0;
+
+  list-style: none;
+  text-align: center;
+}
+.row div{
+  border: 1px solid rgba(0,0,0,0.3);
+
+}
+
+.project{
+  text-align: center;
+
+  background-size: cover;
+  padding: 80px;
+  transition: all .2s ease-in-out;
+
+  border-radius: 20px;
+}
+.smartbrain{
+  background-image: linear-gradient(to right bottom, #00409f, #233eb2, #4238c3, #622bd0, #8400da);
+}
+.robofriends{
+    background-image: linear-gradient(to right bottom, #009f62, #009492, #0084cd, #006bf1, #0033da);
+}
+.backgroundgenerator{
+   background-image: linear-gradient(to right bottom, #9f0072, #a80088, #ad00a0, #ad00bc, #a700da);
+}
+.quiz{
+   background-image: linear-gradient(to right bottom, #9f5000, #895500, #735700, #5f5800, #4d560e);
+}
+.chatplatform{
+  background-image: linear-gradient(to right bottom, #009f0e, #008e3a, #007c4d, #006a54, #0e5650);
+}
+.colorgame{
+    background-image: linear-gradient(to right bottom, #001fee, #4a0dc2, #56039a, #530676, #490e56);
+}
+.project:hover{
+  transform: scale(1.1);
+}
+.gr-container{
+  display: grid;
+
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 2.5% auto;
+
+
+}
+@media (min-width: 992px) {
+  .container{
+    width: 60%;
+  }
+  .gr-container{
+    width: 80%;
+
+  }
+
+ }
+ @media (max-width: 1200px) {
+
+   .gr-container{
+     grid-template-columns: 1fr 1fr;
+
+   }
+
+  }
+  @media(max-width:992px){
+    .aboutme{
+      padding: 15%;
+    }
+  }
+@media(max-width:768px){
+  .skills{
+    position: relative;
+    bottom: 0;
+
+  }
+  .gr-container{
+    grid-template-columns: 1fr;
+  }
+  .project{
+    padding: 20px;
+  }
+  .aboutme{
+    padding: 20%;
+  }
+
+
+}
